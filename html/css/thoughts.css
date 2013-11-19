@@ -1,0 +1,35 @@
+#finderController ul {
+  margin:0px;
+  padding:0px;
+  list-style: none
+}
+
+#finderController ul li span.container {
+  display: inline-block;
+  position: relative;
+}
+
+#finderController form {
+  margin:0;
+  padding: 0;
+}
+
+#finderController form input.query {
+  font-size:2em;
+}
+
+span.weight {
+  color:#aaa;
+  font-size:0.9em;
+  vertical-align: middle;
+}
+
+span.title {
+  font-size:1em;
+  vertical-align: middle;
+}
+
+span.increment-button {
+  cursor:pointer;
+  vertical-align: middle;
+}

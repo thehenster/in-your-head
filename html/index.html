@@ -1,0 +1,28 @@
+<html ng-app>
+<head>
+  <title>Thoughts</title>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/thoughts.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/thoughts.css">
+</head>
+<body>
+
+  <div id="finderController" ng-controller="FinderCtrl">
+    <form name="query">
+      <input ng-model="search" />
+      <button ng-model="search" ng-click="create(search)">Create</button>
+      <button ng-click="search = ''">Clear</button>
+    </form>
+    <ul>
+      <li ng-repeat="result in data | orderBy:'weight':true | filter:search">
+        <span class="container">
+          <span class="weight">{{result.weight}}</span>
+          <span class="title">{{result.title}}</span>
+          <button class="increment-button" ng-click="increment(result)">&#10004;</button>
+        </span>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>
