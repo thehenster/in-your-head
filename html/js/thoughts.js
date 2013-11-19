@@ -14,7 +14,7 @@ function FinderCtrl($scope) {
   $scope.init = function() {
     var datastr = localStorage.getItem('data');
     debug(datastr);
-      if(datastr==null){
+    if(datastr==null){
     } else {
       $scope.data = JSON.parse(datastr);
     }
@@ -38,6 +38,11 @@ function FinderCtrl($scope) {
       }
       return val;
     }));
+  }
+
+  // This is pretty easy but how often does this get evaluated?
+  $scope.showHelp = function() {
+    return ($scope.data.length==0);    
   }
 
   $scope.init();

@@ -1,10 +1,14 @@
+#finderController {
+}
+
 #finderController ul {
   margin:0px;
+  margin-top:10px;
   padding:0px;
   list-style: none
 }
 
-#finderController ul li span.container {
+#finderController ul li span.wrapper {
   display: inline-block;
   position: relative;
 }
@@ -12,10 +16,6 @@
 #finderController form {
   margin:0;
   padding: 0;
-}
-
-#finderController form input.query {
-  font-size:2em;
 }
 
 span.weight {
@@ -29,7 +29,4 @@ span.title {
   vertical-align: middle;
 }
 
-span.increment-button {
-  cursor:pointer;
-  vertical-align: middle;
-}
+/*p.help-text {display:none;}*/
